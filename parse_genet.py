@@ -160,10 +160,12 @@ def parse_sumstats(ref_dict, vld_dict, sst_file, n_subj):
 def parse_ldblk(ldblk_dir, sst_dict, chrom):
     print('... parse reference LD on chromosome %d ...' % chrom)
 
-    if '1kg' in os.path.basename(ldblk_dir):
-        chr_name = ldblk_dir + '/ldblk_1kg_chr' + str(chrom) + '.hdf5'
-    elif 'ukbb' in os.path.basename(ldblk_dir):
-        chr_name = ldblk_dir + '/ldblk_ukbb_chr' + str(chrom) + '.hdf5'
+    # if '1kg' in os.path.basename(ldblk_dir):
+    #     chr_name = ldblk_dir + '/ldblk_1kg_chr' + str(chrom) + '.hdf5'
+    # elif 'ukbb' in os.path.basename(ldblk_dir):
+    #     chr_name = ldblk_dir + '/ldblk_ukbb_chr' + str(chrom) + '.hdf5'
+
+    chr_name = ldblk_dir + '/ldblk_1kg_chr' + str(chrom) + '.hdf5'
 
     hdf_chr = h5py.File(chr_name, 'r')
     n_blk = len(hdf_chr)
