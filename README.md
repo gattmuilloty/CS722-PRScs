@@ -11,4 +11,6 @@ Once downloaded, run:
 
 `tar -xvzf ldblk_1kg_eur.tar.gz`
 
-to unrawp all of the LD reference panel files
+to unrawp all of the LD reference panel files.
+
+To run the program, run the code blocks in `prs-cs.ipynb`. To be able to run everything, you need to have [NumPy](https://numpy.org/) and [HDF5](https://docs.h5py.org/en/stable/) installed.
