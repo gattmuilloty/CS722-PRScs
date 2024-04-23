@@ -52,7 +52,6 @@ def parse_ldblk(ldblk_dir, sst_df, chrom):
 Random variate generator for the generalized inverse Gaussian distribution.
 Reference: L Devroye. Random variate generation for the generalized inverse Gaussian distribution.
            Statistics and Computing, 24(2):239-246, 2014.
-
 """
 
 def psi(x, alpha, lam):

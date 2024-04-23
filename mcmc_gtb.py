@@ -138,7 +138,13 @@ def mcmc(a, b, phi, summaryStats, n, LDBlock, blockSizes, n_iter, n_burnin, thin
         summaryStats['BETA'] = estimatedBeta
         summaryStats[columns].to_csv(eff_file, sep='\t', index=False, header=False)
 
+    #
+    #
+    #
     # write posterior estimates of psi
+    #
+    #
+    #
     if write_psi == 'TRUE':
         if phi_updt == True:
             psi_file = out_dir + '_pst_psi_a%d_b%.1f_phiauto_chr%d.txt' % (a, b, chrom)
