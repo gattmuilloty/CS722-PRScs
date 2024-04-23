@@ -77,7 +77,7 @@ def mcmc(a, b, phi, summaryStats, n, LDBlock, blockSizes, n_iter, n_burnin, thin
 
         # For each 100th iteration
         if itr % 100 == 0:
-            print(' - Interation #' + str(itr) + '-')
+            print(' - Interation #' + str(itr) + ' -')
 
         #### Update Beta (Effect Sizes)
         beta, quad = updateBeta(beta, LDBlock, blockSizes, numBlocks, marginalBeta, sigma, n, psi)
